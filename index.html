@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>   
+    </head>
+
+    <body>
+        <!--navigation bar-->
+        <header class="header">
+            <a href="#home" class = "logo">A.
+                <span>Sinha</span>
+            </a>
+
+            <i class = 'bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#aboutme">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <i class='bx bx-window-close' id="menu-icon"></i>
+        </header>
+
+        <!--home page-->
+        <section id="home">
+            <div class="header1">
+                <div class="header_text">
+                    <h1>Hey, This is <span>Aarya Sinha</span></h1><br><h3>I am from Kolkata, India</h3> 
+                </div>
+                
+                <div class="social-media-icon">
+                    <a href="https://www.linkedin.com/in/aarya-sinha-6216b32b9/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/AaryaSinha05"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:aaryasinha.2005@gmail.com"><i class='bx bxl-gmail'></i></a>
+                </div>
+            </div>
+
+            <div class="front-image">
+                <img src="front_image.jpg" alt="Aarya Sinha">
+            </div>
+        </section>
+        
+        <!--about page-->
+        <section id="aboutme">
+            <div class="leftbox">
+                <img src="about_me.jpg" alt="Aarya Sinha">
+            </div>
+
+            <div class="rightbox">
+
+                <div class="heading-para">
+                    <h1>About Me</h1>
+                    <p>Aspiring software engineer and GCECT student pursuing a B. Tech in
+                        Information Technology at Government College of Engineering and Ceramic
+                        Technology (Autonomous), affiliated with Maulana Abul Kalam Azad
+                        University of Technology, West Bengal. Currently an undergraduate with
+                        proactive learning abilities, proficient in Python and C programming.</p>
+                </div>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('achievements')">Achievements/Certificates</p>
+                    <p class="tab-links" onclick="openTab('languages')">Languages</p>
+                </div>
+
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Programing skills : </span> Python, C</li>
+                        <li><span>Tools and Technologies : </span> Github, Visual Studio Code</li>
+                        <li><span>Libraries and Frameworks : </span> Pygame</li>
+                        <li><span>Web Development : </span> Front-end Development (HTML, CSS, JavaScript)</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="achievements">
+                    <ul>
+                        <li><span>The Joy of Computing with Python : </span> NPTEL (issued on May 2024)</li>
+                        <li><span>WBJEE :</span> got a rank of 5506 in the year 2023</li>
+                        <li><span>IMCT : </span> won first prize in Sanskrit essay writing in the year 2017</li>
+                        <li><span>IMCT : </span> won first prize in Hindi skit play(group) in the year 2014</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="languages">
+                    <ul>
+                        <li><span>English</span> - fluently </li>
+                        <li><span>Hindi</span> - fluently</li>
+                        <li><span>Bengali</span> - basic proficiency</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!--education-->
+        <section class= "education" id="education">
+            <h2 class="heading"><center>Education</center></h2>
+
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2027</i></div>
+
+                        <div class="timeline-content">
+                            <h3>GOVERNMENT COLLEGE OF ENGINEERING AND CERAMIC TECHNOLOGY (GCECT), KOLKATA</h3>
+                            <p>2023 - <i>present</i> <br>
+                                CGPA - 9.64 </p>
+                        </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023</i></div>
+
+                        <div class="timeline-content">
+                            <h3>DELHI PUBLIC SCHOOL, RUBY PARK, KOLKATA</h3>
+                            <p>Completed class 12 in Delhi Public School, Ruby Park [affiliated to
+                                CBSE Board] in the year 2023 with a percentage of 94.6.</p>
+                        </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021</i></div>
+
+                        <div class="timeline-content">
+                            <h3>B.D. MEMORIAL INTERNATIONAL SCHOOL, KOLKATA</h3>
+                            <p>Completed class 10 in B.D. Memorial International school [affiliated
+                                to CBSE Board] in the year 2021 with a percentage of 95.8.</p>
+                        </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019</i></div>
+
+                        <div class="timeline-content">
+                            <h3>D.A.V SCHOOL, ADAMBAKKAM, CHENNAI</h3>
+                            <p>Completed class 8 in D.A.V School [affiliated
+                                to CBSE Board] in the year 2019</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!--projects-->
+        <section class="projects" id="projects">
+            <h2 class="heading"><center>Projects</center></h2>
+            <div class="mainbox">
+                <div class="project1">
+                    <div class="image">
+                        <center><img src="desktop-wallpaper-4-snakes-and-ladders-game-and-snake-and-ladder.png" alt="snakes_and_ladders"></center>
+                    </div>
+                    <div class="content_game">
+                        <h4><center>Snakes and Ladders</center></h4><br>
+                        <p>The object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes.</p>
+                    </div>
+                    <div class="git_icon">
+                        <center><a href="https://github.com/AaryaSinha05/SNAKES_AND_LADDERS"><i class='bx bx-link-external'></i></a></center>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="image">
+                        <center><img src="image.png"></center>
+                    </div>
+                    <div class="content_game">
+                        <h4><center>Tic - Tac - Toe</center></h4><br>
+                        <p>Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid. It includes computer vs player and player vs player.</p>    
+                    </div>
+                    <div class="git_icon">
+                        <center><a href="https://github.com/AaryaSinha05/TIC-TAC-TOE"><i class='bx bx-link-external'></i></a></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contact me-->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class='bx bxs-paper-plane'></i>  aaryasinha.2005@gmail.com</p>
+                        <p><i class='bx bx-phone'></i>  6289XXXXXX</p>
+                        <div class="social-media-icon">
+                            <a href="https://www.linkedin.com/in/aarya-sinha-6216b32b9/"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/AaryaSinha05"><i class='bx bxl-github'></i></a>
+                            <a href="mailto:aaryasinha.2005@gmail.com"><i class='bx bxl-gmail'></i></a>
+                        </div>
+                        <a href="resume_aarya_sinha_31-03-2024.pdf" class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="NAME" placeholder="Your name">
+                            <input type="email" name="EMAIL" placeholder="Your email">
+                            <textarea name="MESSAGE" rows="6" placeholder="enter the message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Copyright © Aarya Sinha</p>
+        </footer>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontent = document.getElementsByClassName("tab-content");
+
+            function openTab(tabname) {
+                for (tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent_ of tabcontent){
+                    tabcontent_.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                            
+            }
+
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz9Q-gcCLpzYB-BPlXvjRc8j5e56KSsbr1bJElHfNsPV0hzy7zsqkfYBdMjVlgMCDYb/exec'
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+    </body>
+
+</html>

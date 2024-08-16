@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "merriweather"
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+html{
+    font-size: 60%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10% 2rem;
+    background: rgba(0, 0, 0,0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 4rem;
+    color:  #ff004f;
+    font-weight: 900;
+    font-family: "merriweather";
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo span{
+    font-family: 'merriweather';
+    color: white;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    transition: 0.4s ease;
+}
+
+.navbar a:hover{
+    border-bottom: 3px solid #ff004f;
+    color:  #ff004f;
+}
+
+#menu-icon{
+    color: white;
+    display: none;
+    font-size: 3.6rem;
+}
+
+section{   
+    min-height: 100%;
+    padding: 8rem 10% 8rem;
+}
+
+#home{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.header1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color:  #ff004f;
+}
+
+.header_text{
+    margin-bottom: 1.8rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.front-image{
+    border-radius: 50%;
+}
+.front-image img{
+    border-radius: 50%;
+    top: 3rem;
+    width: 32vw;
+    box-shadow: 0 0 25px #ff004f;
+    cursor: pointer;
+    transition: 0.4s ease-in-out; 
+}
+
+.front-image img:hover{
+    transform: scale(1.1);
+}
+
+.social-media-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid #ff004f;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: #ff004f;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.social-media-icon a:hover{
+    color: black;
+    transform: scale(1.3);
+    background-color: #ff004f;
+    box-shadow: 0 0 10px #ff004f;
+}
+
+#aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftbox img{
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ff004f;
+    transition: 0.3s ease-in-out;
+}
+
+.leftbox img:hover{
+    transform: scale(1.05);
+}
+
+.rightbox{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.rightbox h1{
+    padding: 0%;
+    font-size: 90px;
+}
+
+.rightbox p{
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 40px 0 20px;
+}
+
+.tab-titles p{
+    font-family: "merriweather";
+    margin-right: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-content ul li{
+    list-style: none;
+    margin: 9px 0px;
+    font-size: 19px;
+}
+
+.tab-content ul li span{
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+.heading{
+    font-size: 70px;
+    margin: 5rem 0;
+}
+
+.education{
+    padding: 50px 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.education h2{
+    margin-bottom: 5rem;
+}
+
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #ff004f;
+    left: calc(50% - 1px);
+
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 20px;
+    width: 20px;
+    background-color: #ff004f;
+    box-shadow: 0 0 25px #ff004f,
+                0 0 50px #ff004f;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800px;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: black;
+    border: 3px solid #ff004f;
+    padding: 30px 50px;
+    border-radius: 4rem ;
+    box-shadow: 0 0 10px #ff004f;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.timeline-content:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #ff004f;
+}
+
+.timeline-content h3{
+    font-size: 17px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500px;
+}
+
+.timeline-content p{
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff004f;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 5px;
+}
+
+.mainbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.project1{
+    overflow: hidden;
+    width: 35rem;
+    height: 45rem;
+    border: 3px solid #ff004f;
+    padding-left: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project1:hover{
+    box-shadow: 0 0 25px #ff004f;
+}
+
+.image{
+    align-self: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    width: 400px;
+    min-height: 120px;
+}
+
+.content_game h4{
+    font-size: 1.8rem;
+}
+.content_game{
+    padding: 20px;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.git_icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 2px solid #ff004f;
+    font-size: 3rem;
+    border-radius: 50%;
+    color: #ff004f;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.git_icon a:hover{
+    color: black;
+    background-color: #ff004f;
+    box-shadow: 0 0 10px #ff004f;
+}
+
+.btn{
+    font-size: medium;
+    font-family: "poppins", sans-serif;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background-color: #ff004f;
+    cursor: pointer;
+    transition: 0.4s ease;
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff004f;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-left h1{
+    font-size: 7.4rem;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    border-radius: 50%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form textarea{
+    font-family: "poppins", sans-serif;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+#msg{
+    color: green;
+    font-size: 20px;
+    margin-top: -40px;
+    display: block;
+
+}
+
+footer{
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    font-size: large;
+    background-color: rgba(39, 39, 39, 0.363) ;
+}
+
+@media(max-width: 1285px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    #home{
+        padding: 15rem 3% 2rem;
+    }
+    .contact-left h1{
+        font-size: 5.9rem;
+    }
+    
+    .contact-left p{
+        margin-top: 30px;
+        font-size: 2.5rem;
+    }
+
+    form input, form textarea{
+        padding: 13px;
+        margin: 12px 0;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:895px){
+    .leftbox img{
+        height: 400px;
+    }
+
+    .rightbox{
+        padding-left: 30px;
+    }
+    
+    .rightbox h1{
+        padding: 0%;
+        font-size: 65px;
+    }
+
+    .rightbox p{
+        font-size: 16px;
+    }
+
+    .tab-titles{
+        margin: 20px 0 10px;
+    }
+    
+    .tab-titles p{
+        margin-right: 40px;
+        font-size: 21px;
+        font-weight: 200;
+    }
+    
+    .tab-content ul li{
+        margin: 7px 0px;
+        font-size: 18px;
+    }
+    
+    .tab-content ul li span{
+        font-size: 19px;
+        font-weight: 300px;
+    }
+
+    .timeline-content h3{
+        font-size: 18px;
+        font-weight: 200px;
+    }
+    
+    .timeline-content p{
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .project1{
+        width: 35rem;
+        height: 45rem;
+        padding-left: 9px;
+        margin: 14px;
+    }
+
+    .content_game h4{
+        font-size: 2rem;
+    }
+    .content_game{
+        padding: 18px;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 600px){
+    
+}
