@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+        <link rel="shortcut icon" href="./resume.png" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>   
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        
     </head>
 
     <body>
@@ -32,7 +34,9 @@
         <section id="home">
             <div class="header1">
                 <div class="header_text">
-                    <h1>Hey, This is <span>Aarya Sinha</span></h1><br><h3>I am from Kolkata, India</h3> 
+                    <h1>Hey, This is <span>Aarya Sinha</span></h1>
+                    <br>
+                    <h3>I am from Kolkata, India</h3> 
                 </div>
                 
                 <div class="social-media-icon">
@@ -216,6 +220,7 @@
 
         <script>
 
+            // function for skills/achievements/languages tabs shift 
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontent = document.getElementsByClassName("tab-content");
 
@@ -236,6 +241,8 @@
         </script>
 
         <script>
+
+            // connecting google sheets with the website's input section
             const scriptURL = 'https://script.google.com/macros/s/AKfycbz9Q-gcCLpzYB-BPlXvjRc8j5e56KSsbr1bJElHfNsPV0hzy7zsqkfYBdMjVlgMCDYb/exec'
             const form = document.forms['submit-to-google-sheet'];
             const msg = document.getElementById("msg");
@@ -252,8 +259,11 @@
                 })
                 .catch(error => console.error('Error!', error.message))
             })
+
         </script>
 
     </body>
 
 </html>
+
+<!--menu bar js and education - qm-->
