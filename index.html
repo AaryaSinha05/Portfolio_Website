@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
         
     </head>
 
@@ -27,7 +28,8 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <i class='bx bx-window-close' id="menu-icon"></i>
+            <!--<i class='bx bx-window-close' id="menu-icon"  ></i>-->
+            
         </header>
 
         <!--home page-->
@@ -262,8 +264,36 @@
 
         </script>
 
+        <script>
+            //menu bar
+            let menuIcon = document.querySelector("#menu-icon");
+            let navbar = document.querySelector('.navbar');
+            let sections = document.querySelectorAll('section');
+            let navlinks = document.querySelectorAll('header nav a');
+
+            window.onscroll = () => {
+                sections.forEach(sec => {
+                    let top = window.scrollY;
+                    let offset = sec.offsetTop - 150;
+                    let height = sec.offsetHeight;
+                    let id = sec.getAttribute;
+
+                    if (top >= offset && top < offset + height){
+                        navlinks.forEach(links => {
+                            links.classList.remove('active');
+                            document.querySelector('header nav a [href*=' + id + ' ]').classList.add('active')
+                        })
+                    }
+                })
+            }
+
+            menuIcon.onclick = () => {
+                menuIcon.classList.toggle('bx');
+                navbar.classList.toggle('active');
+            }
+        </script>
     </body>
 
 </html>
 
-<!--menu bar js and education - qm-->
+<!--menu bar js-->
