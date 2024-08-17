@@ -35,7 +35,7 @@ html{
 }
 
 .logo{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color:  #ff004f;
     font-weight: 900;
     font-family: "merriweather";
@@ -103,13 +103,14 @@ span{
 .header_text{
     margin-bottom: 1.8rem;
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 1;
 }
 
 .front-image{
     border-radius: 50%;
 }
+
 .front-image img{
     border-radius: 50%;
     top: 3rem;
@@ -173,12 +174,12 @@ span{
 
 .rightbox h1{
     padding: 0%;
-    font-size: 90px;
+    font-size: 70px;
 }
 
 .rightbox p{
     font-family: "poppins", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .tab-titles{
@@ -190,7 +191,7 @@ span{
     font-family: "merriweather";
     margin-right: 50px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 400;
     cursor: pointer;
     position: relative;
 }
@@ -213,7 +214,7 @@ span{
 .tab-content ul li{
     list-style: none;
     margin: 9px 0px;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .tab-content ul li span{
@@ -294,8 +295,8 @@ span{
 }
 
 .timeline-date{
-    font-size: 20px;
-    font-weight: 800px;
+    font-size: 18px;
+    font-weight: 800;
     color: white;
     margin: 6px 0 15px;
 }
@@ -316,14 +317,14 @@ span{
 }
 
 .timeline-content h3{
-    font-size: 17px;
+    font-size: 15px;
     color: white;
     margin: 0 0 10px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .timeline-content p{
-    font-size: 15px;
+    font-size: 14px;
     color: white;
     font-weight: 300;
     line-height: 22px;
@@ -379,12 +380,13 @@ span{
 }
 
 .content_game h4{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
+
 .content_game{
     padding: 20px;
     padding-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .git_icon a{
@@ -442,12 +444,12 @@ span{
 }
 
 .contact-left h1{
-    font-size: 7.4rem;
+    font-size: 6.5rem;
 }
 
 .contact-left p{
     margin-top: 30px;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
 .contact-left p i{
@@ -509,18 +511,18 @@ footer{
         padding: 15rem 3% 2rem;
     }
     .contact-left h1{
-        font-size: 5.9rem;
+        font-size: 5.3rem;
     }
     
     .contact-left p{
         margin-top: 30px;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     form input, form textarea{
         padding: 13px;
         margin: 12px 0;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -535,11 +537,11 @@ footer{
     
     .rightbox h1{
         padding: 0%;
-        font-size: 65px;
+        font-size: 60px;
     }
 
     .rightbox p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .tab-titles{
@@ -548,17 +550,17 @@ footer{
     
     .tab-titles p{
         margin-right: 40px;
-        font-size: 21px;
+        font-size: 19px;
         font-weight: 200;
     }
     
     .tab-content ul li{
         margin: 7px 0px;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .tab-content ul li span{
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 300px;
     }
 
@@ -592,6 +594,7 @@ footer{
     html{
         font-size: 50%;
     }
+
     #menu-icon{
         display: block;
     }
@@ -682,6 +685,30 @@ footer{
         font-size: 14px;
     }
 
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd){
+        padding-left: 35px;
+    }
+
+    .timeline-content h3{
+        font-size: 14px;
+    }
+
+    .timeline-content p{
+        font-size: 13px;
+    }
+    
+    .timeline-dot{
+        left: 0;
+    }
     .row{
         flex-direction: column;
         justify-content: center;
@@ -689,10 +716,31 @@ footer{
     }
 
     .contact-left h1{
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .contact-left p{
-        font-size: 19px;
+        font-size: 17px;
     }
+    
+    footer{
+        font-size: 15px;
+    }
+
+    .project1{
+        width: 35rem;
+        height: 45rem;
+        padding-left: 6px;
+        margin: 12px;
+    }
+
+    .content_game h4{
+        font-size: 1.3rem;
+    }
+
+    .content_game{
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
 }
